@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+  </head>
+  <body
+    class="flex items-center justify-center bg-[#f4f5f7] h-[100vh] flex-col"
+  >
+    <div
+      class="h-[130px] w-[330px] bg-[url(./assets/bg.png)] flex justify-center items-center mb-0.5 ml-2"
+    >
+      <img src="./assets/Group.png" alt="" />
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow-2xl">
+      <form action="" class="w-[340px] bg-white rounded-2xl p-5">
+        <label for="" class="font-bold">Mobile Number</label><br />
+        <input
+          id="num"
+          type="text"
+          placeholder="Enter your number"
+          class="p-3 border-none bg-[#f4f5f7] outline-blue-700 rounded-2xl mt-3 w-[300px]"
+        />
+
+        <br /><br />
+        <label for="" class="font-bold">4 Digit Pin</label><br />
+
+        <input
+          id="pass"
+          type="password"
+          placeholder="Enter 4 Digit Pin"
+          class="p-3 border-b-4 border-transparent focus:shadow-3xl bg-[#f4f5f7] rounded-2xl mt-3 w-[300px] outline-blue-700"
+        />
+
+        <br />
+        <button
+          id="btn"
+          class="p-3 border-none rounded-4xl mt-9 bg-blue-700 cursor-pointer hover:text-black duration-500 hover:bg-[#f4f5f7] w-[300px] text-white font-bold"
+        >
+          Login
+        </button>
+      </form>
+
+      
+    </div><div>
+        <div>$<span id="dlr">5000</span></div>
+        <input class="dlr1" type="number" />
+        <button class="dlr2">add</button>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
