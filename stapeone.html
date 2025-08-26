@@ -26,7 +26,7 @@
           <img src="./assets/Group.png" alt="" />
           <div>
             <h1 class="font-extrabold">
-              $<span class="font-extrabold">45000</span>
+              $<span class="font-extrabold" id="craccount">45000</span>
             </h1>
             <h6>Available Balance</h6>
           </div>
@@ -126,6 +126,7 @@
             <div class="mt-4">
               <label for="" class="font-medium">Bank Account Number</label>
               <input
+                id="account-num"
                 type="number"
                 placeholder="Enter 11 digit account number"
                 class="w-full rounded-3xl p-3 bg-[#f4f5f7] text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-3 border-none"
@@ -134,21 +135,24 @@
             <div class="mt-4">
               <label for="" class="font-medium">Amount to Add</label>
               <input
+                id="amount"
                 type="number"
                 placeholder="Add amount to withdraw"
                 class="w-full rounded-3xl p-3 bg-[#f4f5f7] text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-3 border-none"
               />
             </div>
             <div class="mt-4">
-              <label for="" class="font-medium">Bank Account Number</label>
+              <label for="" class="font-medium">password</label>
               <input
+                id="bankpass"
                 type="password"
-                placeholder="Enter 11 digit account number"
+                placeholder="Enter 4 digit password"
                 class="w-full rounded-3xl p-3 bg-[#f4f5f7] text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-3 border-none"
               />
             </div>
             <div>
               <button
+                type="button"
                 id="btn"
                 class="p-3 border-none rounded-4xl mt-6 bg-blue-700 cursor-pointer hover:text-black duration-500 hover:bg-[#f4f5f7] w-full text-white font-bold"
               >
